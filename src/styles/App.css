@@ -51,3 +51,50 @@
 .product-price {
   font-weight: 700;
 }
+
+/* Contenedor de herramientas (filtro por categoria) */
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+/* Fila compacta */
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Etiqueta del filtro */
+.label {
+  font-weight: 600;
+}
+
+/* Select de categorias */
+.select {
+  padding: 8px 10px;
+  border: 1px solid #2b2b2b;
+  border-radius: 8px;
+  background: #111;
+  color: #eee;
+}
+
+/* Mensaje de estado */
+.status {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Mensaje de error */
+.error {
+  color: #ffb3b3;
+  background: #3b1f1f;
+  border: 1px solid #6a2b2b;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
