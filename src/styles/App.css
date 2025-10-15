@@ -98,3 +98,19 @@
   border-radius: 8px;
   margin: 8px 0;
 }
+
+/* Boton recarga */
+.btn {
+  padding: 8px 12px;
+  border: 1px solid #2b2b2b;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Estado deshabilitado */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

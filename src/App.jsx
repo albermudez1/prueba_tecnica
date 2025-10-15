@@ -6,6 +6,7 @@ import {
 } from "./api/products";
 import ProductList from "./components/ProductList";
 import CategoryFilter from "./components/CategoryFilter";
+import ReloadButton from "./components/ReloadButton";
 import "./styles/App.css";
 
 import { useState } from 'react'
@@ -63,6 +64,7 @@ function App() {
           onChange={setSelectedCategory}
         />
         {/*  boton de recarga  */}
+        <ReloadButton onClick={() => loadProducts()} disabled={loading} />
       </div>
 
       {errorMsg && <p className="error">{errorMsg}</p>}
