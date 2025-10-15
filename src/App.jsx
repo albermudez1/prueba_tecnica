@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   fetchProducts,
   fetchCategories,
@@ -9,10 +9,6 @@ import CategoryFilter from "./components/CategoryFilter";
 import ReloadButton from "./components/ReloadButton";
 import "./styles/App.css";
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
 
@@ -55,7 +51,7 @@ function App() {
 
   return (
     <main className="container">
-      <h1 className="title">Lista de productos</h1>
+      <h1 className="title">Productos</h1>
 
       <div className="toolbar">
         <CategoryFilter
